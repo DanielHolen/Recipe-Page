@@ -1,0 +1,254 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Font Family's
+font-family: 'Outfit', sans-serif; / 400 - 600 -700
+font-family: 'Young Serif', serif; / 400
+*/
+
+html {
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+  width: 100vw;
+}
+
+
+img {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+
+main {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+section {
+  padding: 0 2em;
+}
+/* Desription Section */
+
+h1 {
+  font-family: 'Young Serif', serif;
+  font-size: 2.3em;
+  margin-bottom: 0.7em;
+}
+
+.description p {
+  color: hsl(30, 10%, 34%);
+  line-height: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+/* Preparation Section */
+
+.preparation-overview {
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+  padding: 1em 2em;
+  width: 70%;
+}
+
+.preparation-overview h3 {
+  color: hsl(332, 51%, 32%);
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  text-align: left;
+}
+
+/* what is going on with the bullet points? / should this be a list? */
+
+.preparation-overview li {
+  list-style-position: inside;
+  list-style-type: disc;
+  padding: 0.5em 1em;
+  text-indent: -1.5em;
+}
+
+.preparation-overview li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+.bold-text {
+  color: hsl(30, 10%, 34%);
+  font-weight: 600;
+}
+
+/* Ingredients Section * */
+
+#ingredients-list {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding-bottom: 1em;
+  list-style-position: inside;
+  list-style-type: disc;
+  padding: 1.5em 2em;
+  text-indent: -1.5em;
+}
+
+#ingredients-list li {
+  margin-bottom: 1em;
+  color: hsl(30, 10%, 34%);
+}
+
+#ingredients-list li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+/* Instructions Section */
+
+.instructions {
+  font-size: 0.8;
+  line-height: 1.2;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding-bottom: 1em;
+}
+
+.instructions ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+.instructions li {
+  margin: 1em;
+  text-indent: -1em;
+  color: hsl(30, 10%, 34%);
+} 
+
+.instructions li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+
+/* Reusables */
+
+.sub-heading {
+  color: hsl(14, 45%, 36%);
+  font-size: 2em;
+  font-family: 'Young Serif', serif;
+}
+
+.orange-text {
+  font-weight: 600;
+  color: hsl(14, 45%, 36%);
+}
+
+ /* Nutrition Section */
+
+ .nutrition {
+  padding-bottom: 1em;
+ }
+
+.nutrition p {
+  margin: 1.5em 0;
+  color: hsl(30, 10%, 34%);
+}
+
+.nutrition table {
+  width: 90%;
+}
+
+.nutrition tr {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.nutrition tr:last-child {
+  border-bottom: none;
+}
+
+.nutrition td {
+  padding: 1em;
+  width: 60%;
+  margin: 0 auto;
+}
+
+/* Footer */
+
+.attribution {
+  display: none;
+}
+
+/* Media Queries for Desktop 1440px */
+
+@media (min-width: 1440px) {
+  main {
+    width: 50%;
+    margin: 4em auto;
+    border-radius: 10px;
+  }
+
+  img {
+    border-radius: 10px;
+    width: 90%;
+    margin: 2em auto;
+  }
+
+  section {
+    margin: 1em 2em;
+  }
+}
+
+
+
+
+
+
+
+
+
